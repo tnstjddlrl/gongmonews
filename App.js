@@ -27,7 +27,6 @@ const App = () => {
       DeviceInfo.getPhoneNumber().then((phoneNumber) => {
         console.log(`폰번호 : ${phoneNumber.replace('+82', '0')}`)
         setPhone(phoneNumber.replace('+82', '0'))
-        // Android: null return: no permission, empty string: unprogrammed or empty SIM1, e.g. "+15555215558": normal return value
       });
     })
   }, [])
@@ -59,9 +58,9 @@ const App = () => {
   function onMessage(event) {
     if (event.nativeEvent.data == 'phonenumber') {
       if (phone[0] === '+' || phone === '') {
-        rnw.postMessage('Foreigner')
+        rnw.postMessage('phonenumber/Foreigner')
       } else {
-        rnw.postMessage(phone)
+        rnw.postMessage(`phonenumber/${phone}`)
       }
     }
   }
