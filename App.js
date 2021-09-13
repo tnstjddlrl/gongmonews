@@ -3,7 +3,6 @@ import {
   Alert,
   BackHandler,
   SafeAreaView,
-  PermissionsAndroid
 } from 'react-native';
 
 import DeviceInfo from 'react-native-device-info';
@@ -12,14 +11,10 @@ import SplashScreen from 'react-native-splash-screen'
 
 import WebView from 'react-native-webview';
 
-
-
 var rnw
 var cbc = false;
 
-
 const App = () => {
-
   const [phone, setPhone] = useState('')
 
   useEffect(() => {
@@ -36,7 +31,6 @@ const App = () => {
       });
     })
   }, [])
-
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener(
@@ -64,7 +58,11 @@ const App = () => {
 
   function onMessage(event) {
     if (event.nativeEvent.data == 'phonenumber') {
-      rnw.postMessage(phone)
+      if (phone[0] === '+' || phone === '') {
+        rnw.postMessage('Foreigner')
+      } else {
+        rnw.postMessage(phone)
+      }
     }
   }
 
@@ -84,6 +82,5 @@ const App = () => {
     </SafeAreaView>
   )
 }
-
 
 export default App;
