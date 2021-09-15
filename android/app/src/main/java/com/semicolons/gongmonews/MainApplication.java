@@ -1,4 +1,4 @@
-package com.gongmonews;
+package com.semicolons.gongmonews;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.gongmonews;
+package com.semicolons.gongmonews;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
