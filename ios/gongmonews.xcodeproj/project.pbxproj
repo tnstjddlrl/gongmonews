@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1F3ACCEA27925EAE85319105 /* libPods-gongmonews-gongmonewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17282707D3B4A5A8E260A25D /* libPods-gongmonews-gongmonewsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		851E7BA5272672F600C6CEE3 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 851E7BA4272672F600C6CEE3 /* splash.png */; };
 		852B6705272282C300036831 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 852B6704272282C300036831 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		63E3F1BB6BC0D8749E0B50EC /* Pods-gongmonews-gongmonewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gongmonews-gongmonewsTests.release.xcconfig"; path = "Target Support Files/Pods-gongmonews-gongmonewsTests/Pods-gongmonews-gongmonewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		817DA137DF444EAFFBD68206 /* libPods-gongmonews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gongmonews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = gongmonews/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		851E7BA4272672F600C6CEE3 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		852B6704272282C300036831 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF2687B9F790EA5CF81D689B /* Pods-gongmonews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gongmonews.release.xcconfig"; path = "Target Support Files/Pods-gongmonews/Pods-gongmonews.release.xcconfig"; sourceTree = "<group>"; };
 		BD6A14A6FFC798768F95F53A /* Pods-gongmonews-gongmonewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gongmonews-gongmonewsTests.debug.xcconfig"; path = "Target Support Files/Pods-gongmonews-gongmonewsTests/Pods-gongmonews-gongmonewsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		13B07FAE1A68108700A75B9A /* gongmonews */ = {
 			isa = PBXGroup;
 			children = (
+				851E7BA4272672F600C6CEE3 /* splash.png */,
 				852B6704272282C300036831 /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851E7BA5272672F600C6CEE3 /* splash.png in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				852B6705272282C300036831 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
@@ -502,12 +506,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7Z3KM4739;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = gongmonews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -528,11 +534,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7Z3KM4739;
 				INFOPLIST_FILE = gongmonews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
